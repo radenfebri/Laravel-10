@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('coba', CobaController::class, 'index')->name('coba');
+Route::get('coba', [CobaController::class, 'index'])->name('coba');
